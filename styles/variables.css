@@ -7,9 +7,14 @@
   --background-gradient: repeating-linear-gradient(to left, #d3d3d3 0px, #d3d3d3 2px, transparent 3px, transparent 4px),
   repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 3px, transparent 4px),
   linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
-  --main-color: #000;
-  --button-color: #fff;
-  --main-bg-color: #fff;
-  --basic-heart-contour-color: #000;
-  --heart-sparks-color: red;
+  --page-color: #fff;
+  --contrast-color: #000;
+  --heart-color: red;
+  --page-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --page-description-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --header-section-bottom-margin: clamp(6.25rem, 5.1496rem + 4.6948vw, 9.375rem);
+  --header-padding-top-bottom: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  --save-container-width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  --description-gap: 25px;
 }
