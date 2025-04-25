@@ -118,11 +118,6 @@
   align-items: center;
 }
 
-.card__icon-button {
-  background-color: var(--page-color);
-  cursor: pointer;
-}
-
 .like-icon .core {
   fill: transparent;
   transition: fill 0.3s linear 0.03s;
@@ -241,7 +236,10 @@
   border: solid 2px transparent;
   justify-items: center;
   align-items: center;
+  background-color: var(--page-color);
+  cursor: pointer;
 }
+
 .card__icon-button:focus {
   outline: none;
 }
@@ -306,6 +304,7 @@
   gap: 20px;
   font-family: var(--accent-font);
   font-size: 14px;
+  margin-bottom: 30px;
 }
 
 .dialog-content svg {
@@ -318,10 +317,6 @@
 .dialog-content span {
   flex-wrap: wrap;
   align-self: center;
-}
-
-.dialog-content {
-  margin-bottom: 30px;
 }
 
 .close {
