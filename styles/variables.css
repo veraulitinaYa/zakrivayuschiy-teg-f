@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --accent-font: 'PressStart2P-Regular';
+  --accent-font: 'PressStart2P';
   --text-font: 'Inter-Variable';
   --card-text-font-weight: 400;
   --card-title-font-weight: 700;
@@ -13,7 +13,7 @@
   --page-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --page-description-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  --header-section-bottom-margin: clamp(6.25rem, 5.1496rem + 4.6948vw, 9.375rem);
+  --header-section-bottom-margin: 100px;
   --header-padding-top-bottom: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
   --save-container-width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   --description-gap: 25px;
