@@ -80,25 +80,26 @@
 
 .image-label {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 25px;
+  right: 25px;
   z-index: 12;
   color: var(--contrast-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
   font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
   text-shadow: -1px 0 var(--page-color), 0 1px var(--page-color),
     1px 0 var(--page-color), 0 -1px var(--page-color);
+}
 
-  @supports (
-    (text-stroke: 1px var(--page-color)) or
-      (-webkit-text-stroke: 1px var(--page-color))
-  ) {
-    .image-label {
-      -webkit-text-stroke: 1px var(--page-color);
-      text-stroke: 1px var(--page-color);
-      text-shadow: none;
-    }
+@supports (
+  (text-stroke: 1px var(--page-color)) or
+    (-webkit-text-stroke: 1px var(--page-color))
+) {
+  .image-label {
+    -webkit-text-stroke: 1px var(--page-color);
+    text-stroke: 1px var(--page-color);
+    text-shadow: none;
   }
 }
 
@@ -313,14 +314,10 @@
   justify-self: center;
 
   @media (width <= 375px) {
-    .save-container {
-      max-width: 306px;
-      min-height: 83px;
-    }
+    max-width: 306px;
+    max-height: 84px;
   }
 }
-
-
 
 .save-button svg {
   position: relative;
@@ -329,6 +326,10 @@
   height: 21px;
   width: 21px;
   align-self: center;
+  @media (width <= 375px) {
+    height: 28px;
+    width: 28px;
+  }
 }
 
 .save-button {
@@ -339,24 +340,28 @@
   flex-grow: 0;
 
   @media (width <= 375px) {
-    flex-wrap: wrap;
     flex-direction: column;
   }
-}
-
-.save-button-text {
-  text-wrap: nowrap;
 }
 
 .popup {
   inline-size: clamp(22.3125rem, 22.6646rem + -1.5023vw, 21.3125rem);
   padding: 30px;
+  border: solid 2px var(--contrast-color);
+  @media (width<=375px) {
+    padding: 32px 42px 32px 42px;
+  }
+
+}
+
+.popup::backdrop {
+  background-color: var(--contrast-color);
+  opacity: 0.75;
 }
 
 .dialog-content {
   display: flex;
   flex-direction: row;
-
   justify-items: center;
   gap: 20px;
   font-family: var(--accent-font), sans-serif;
@@ -364,6 +369,7 @@
   margin-bottom: 30px;
   background-color: var(--page-color);
   text-transform: uppercase;
+  justify-self: center;
 }
 
 .dialog-content svg {
@@ -374,13 +380,14 @@
   align-self: center;
 }
 
-.dialog-content span {
+.dialog-content p {
   flex-wrap: wrap;
   align-self: center;
   line-height: 150%;
 }
 .close {
-  width: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
-  height: 38px;
+
   justify-self: center;
+  height: 38px;
+
 }
